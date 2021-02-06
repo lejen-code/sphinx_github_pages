@@ -52,13 +52,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# Readthedocs theme
-on_rtd = os.environ.get("READTHEDOCS", None) == "True"
-
 # default theme
 html_theme = 'alabaster'
 
-if not on_rtd:  # only import and set the theme if we're building docs locally
+# Readthedocs theme
+on_rtd = os.environ.get("READTHEDOCS", None) == "True"
+if on_rtd:
     import sphinx_rtd_theme
     html_theme = "sphinx_rtd_theme"
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
