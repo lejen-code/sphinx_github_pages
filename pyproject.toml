@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "sphinx_github_pages"
-version = "0.0.1"
+version = "0.0.2"
 description = "Host Sphinx Docs on GitHub Pages"
 authors = ["lejen"]
 
 [tool.poetry.dependencies]
 python = "3.8.5"
-Sphinx = "3.4.1"
+Sphinx = "3.4.3"
+sphinx_rtd_theme = "0.5.1"
 
 [tool.poetry.dev-dependencies]
 
