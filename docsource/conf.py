@@ -33,6 +33,7 @@ release = '2021'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx_rtd_theme',
 ]
 
 # enable autosummary
