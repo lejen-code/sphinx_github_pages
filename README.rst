@@ -2,7 +2,9 @@
 How to Host reStructured Text on GitHub Pages
 ######################################################
 
-.. figure:: https://github.com/lejen-code/sphinx_github_pages/workflows/github%20pages/badge.svg
+.. figure:: https://github.com/lejen-code/sphinx_github_pages/workflows/github%20pages/badge.svg 
+.. image:: https://readthedocs.org/projects/sphinx-github-pages/badge/?version=latest
+
 
 ******************************************************
 01: Project structure
