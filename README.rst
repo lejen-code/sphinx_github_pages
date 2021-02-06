@@ -2,6 +2,8 @@
 How to Host reStructured Text on GitHub Pages
 ######################################################
 
+.. figure:: https://github.com/lejen-code/sphinx_github_pages/workflows/github%20pages/badge.svg
+
 ******************************************************
 01: Project structure
 ******************************************************
@@ -35,7 +37,7 @@ How to Host reStructured Text on GitHub Pages
 ******************************************************
 
 **Sphinx** documentation `sphinx-doc.org: Getting Started <https://www.sphinx-doc.org/en/master/usage/quickstart.html>`_
-**sphinx-quickstart** command to quickly generate documentation `sphinx-doc.org: sphinx-quickstart <https://www.sphinx-doc.org/en/master/man/sphinx-quickstart.html?highlight=sphinx-quickstart>`_
+**sphinx-quickstart** command to quickly generate documentation `sphinx-quickstart <https://www.sphinx-doc.org/en/master/man/sphinx-quickstart.html?highlight=sphinx-quickstart>`_
 
 .. code:: bash
 
@@ -184,7 +186,7 @@ to:
 07: create ``autosummary`` templates
 ======================================================
 
-Sphinx `sphinx-doc.org: autosummary <https://www.sphinx-doc.org/en/1.6/ext/autosummary.html>`_ uses Jinja stub page templates files to generate the documentation: 
+Sphinx `autosummary <https://www.sphinx-doc.org/en/1.6/ext/autosummary.html>`_ uses Jinja stub page templates files to generate the documentation: 
 
 - autosummary/base.rst – fallback template
 - autosummary/module.rst – template for modules
@@ -281,7 +283,7 @@ This will:
 - add a ``.nojekyll`` file to `github.blog: Bypassing Jekyll on GitHub Pages <https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/>`_
 - copy the latest README.rst file (guide) into the ``docsource`` directory
 - run ``make html`` to build the documentation into the ``_build`` directory
-- the ``make html`` command is actually saved in the ``./docsource/Makfile``
+- the ``make html`` command is actually saved in the ``./docsource/Makefile``
 - copy the newly built ``_build`` static files into ``docs`` required by GitHub Pages
 
 .. important:: 
@@ -297,7 +299,7 @@ This will:
 
     Use a GitHub Action saved in ``.github/workflows/publish.yml``
 
-.. code:: yml
+.. code:: yaml
 
     name: gh-pages publisher 🚀
 
