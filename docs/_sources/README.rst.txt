@@ -301,7 +301,7 @@ This will:
 
 .. code:: yaml
 
-    name: gh-pages publisher 🚀
+    name: github pages  🚀
 
     on:
     push:
