@@ -283,7 +283,7 @@ This will:
 - add a ``.nojekyll`` file to `github.blog: Bypassing Jekyll on GitHub Pages <https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/>`_
 - copy the latest README.rst file (guide) into the ``docsource`` directory
 - run ``make html`` to build the documentation into the ``_build`` directory
-- the ``make html`` command is actually saved in the ``./docsource/Makfile``
+- the ``make html`` command is actually saved in the ``./docsource/Makefile``
 - copy the newly built ``_build`` static files into ``docs`` required by GitHub Pages
 
 .. important:: 
