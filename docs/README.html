@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>How to Host reStructured Text on GitHub Pages &#8212; auto sphinx to github page 2021 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
@@ -32,12 +33,12 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="how-to-host-restructured-text-on-github-pages">
+  <section id="how-to-host-restructured-text-on-github-pages">
 <h1>How to Host reStructured Text on GitHub Pages<a class="headerlink" href="#how-to-host-restructured-text-on-github-pages" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-default">
-<img alt="https://github.com/lejen-code/sphinx_github_pages/workflows/github%20pages/badge.svg" src="https://github.com/lejen-code/sphinx_github_pages/workflows/github%20pages/badge.svg" /></div>
+<figure class="align-default">
+<img alt="https://github.com/lejencodes/sphinx_github_pages/workflows/github%20pages/badge.svg" src="https://github.com/lejencodes/sphinx_github_pages/workflows/github%20pages/badge.svg" /></figure>
 <img alt="https://readthedocs.org/projects/sphinx-github-pages/badge/?version=latest" src="https://readthedocs.org/projects/sphinx-github-pages/badge/?version=latest" />
-<div class="section" id="project-structure">
+<section id="project-structure">
 <h2>01: Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -62,8 +63,8 @@ GitHub Pages in the <strong>docs</strong> directory.</p>
 <code class="docutils literal notranslate"><span class="pre">sphinx</span> <span class="pre">(v3.4.1)</span></code>,
 <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">(v1.1.0)</span></code></p>
 </div>
-</div>
-<div class="section" id="sphinx-quickstart">
+</section>
+<section id="sphinx-quickstart">
 <h2>02: sphinx-quickstart<a class="headerlink" href="#sphinx-quickstart" title="Permalink to this headline">¶</a></h2>
 <p><strong>Sphinx</strong> documentation <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">sphinx-doc.org: Getting Started</a>
 <strong>sphinx-quickstart</strong> command to quickly generate documentation <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-quickstart.html?highlight=sphinx-quickstart">sphinx-quickstart</a></p>
@@ -94,8 +95,8 @@ GitHub Pages in the <strong>docs</strong> directory.</p>
     └── Makefile
 </pre></div>
 </div>
-</div>
-<div class="section" id="test">
+</section>
+<section id="test">
 <h2>03: Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -114,8 +115,8 @@ python3 -m http.server <span class="m">8000</span> --bind <span class="m">127</s
 </pre></div>
 </div>
 <p>Now navigate to <a class="reference external" href="http://localhost:8000">localhost:8000</a>.</p>
-</div>
-<div class="section" id="add-python-module-package">
+</section>
+<section id="add-python-module-package">
 <h2>04: add python module/package<a class="headerlink" href="#add-python-module-package" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>project-name
 ├── .gitignore
@@ -151,7 +152,7 @@ python3 -m http.server <span class="m">8000</span> --bind <span class="m">127</s
 └── README.rst
 </pre></div>
 </div>
-<div class="section" id="uncomment-sys-path">
+<section id="uncomment-sys-path">
 <h3>05: Uncomment <code class="docutils literal notranslate"><span class="pre">sys.path</span></code><a class="headerlink" href="#uncomment-sys-path" title="Permalink to this headline">¶</a></h3>
 <p>From <cite>conf.py</cite> uncomment the following code to allow <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> to look in the correct directory
 where the python packages have been saved:</p>
@@ -163,8 +164,8 @@ where the python packages have been saved:</p>
 <span class="c1"># make sure you are pointing it to the correct relative/absolute path</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="add-autodoc-and-autosummary-extensions">
+</section>
+<section id="add-autodoc-and-autosummary-extensions">
 <h3>06: add <code class="docutils literal notranslate"><span class="pre">autodoc</span></code> and <code class="docutils literal notranslate"><span class="pre">autosummary</span></code> extensions<a class="headerlink" href="#add-autodoc-and-autosummary-extensions" title="Permalink to this headline">¶</a></h3>
 <p>Add the built-in sphinx extensions: <strong>autodoc</strong> and <strong>autosummary</strong> by replacing:
 <cite>autodoc</cite> <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">sphinx-doc.org: autodoc</a>
@@ -192,8 +193,8 @@ where the python packages have been saved:</p>
 <span class="n">autosummary_generate</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="create-autosummary-templates">
+</section>
+<section id="create-autosummary-templates">
 <h3>07: create <code class="docutils literal notranslate"><span class="pre">autosummary</span></code> templates<a class="headerlink" href="#create-autosummary-templates" title="Permalink to this headline">¶</a></h3>
 <p>Sphinx <a class="reference external" href="https://www.sphinx-doc.org/en/1.6/ext/autosummary.html">autosummary</a> uses Jinja stub page templates files to generate the documentation:</p>
 <ul class="simple">
@@ -212,8 +213,8 @@ where the python packages have been saved:</p>
 │   │   └── module.rst
 </pre></div>
 </div>
-</div>
-<div class="section" id="add-the-autosummary-directive">
+</section>
+<section id="add-the-autosummary-directive">
 <h3>08: add the <code class="docutils literal notranslate"><span class="pre">autosummary</span></code> directive<a class="headerlink" href="#add-the-autosummary-directive" title="Permalink to this headline">¶</a></h3>
 <p>This has been added to the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> page but can be added to any other page.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">autosummary</span><span class="p">::</span>
@@ -225,8 +226,8 @@ where the python packages have been saved:</p>
 <span class="n">mytoolbox</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="modify-the-make-file-and-remove-built-cache">
+</section>
+<section id="modify-the-make-file-and-remove-built-cache">
 <h3>09: modify the <cite>make</cite> file and remove built cache<a class="headerlink" href="#modify-the-make-file-and-remove-built-cache" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%: Makefile
     rm -rf _build               <span class="c1"># remove _build folder cache during the local build test process</span>
@@ -234,8 +235,8 @@ where the python packages have been saved:</p>
     @<span class="k">$(</span>SPHINXBUILD<span class="k">)</span> -M <span class="nv">$@</span> <span class="s2">&quot;</span><span class="k">$(</span>SOURCEDIR<span class="k">)</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">&quot;</span> <span class="k">$(</span>SPHINXOPTS<span class="k">)</span> <span class="k">$(</span>O<span class="k">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="build-the-docs-locally">
+</section>
+<section id="build-the-docs-locally">
 <h3>10: build the docs locally<a class="headerlink" href="#build-the-docs-locally" title="Permalink to this headline">¶</a></h3>
 <p>sing <strong>python</strong> built-in <code class="docutils literal notranslate"><span class="pre">http.server</span></code> module create a new <strong>make</strong> file in the <strong>root</strong> of the project and add the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># using the makefile inside the docs folder</span>
@@ -255,8 +256,8 @@ live_docs:
 <li><p>open a new python <code class="docutils literal notranslate"><span class="pre">http.server</span></code> to show the static files saved in the previous step</p></li>
 </ul>
 <p>To test the new setup you can run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">live_docs</span></code> from the <strong>root</strong> of the project.</p>
-</div>
-<div class="section" id="host-to-github-pages">
+</section>
+<section id="host-to-github-pages">
 <h3>11: Host to GitHub Pages<a class="headerlink" href="#host-to-github-pages" title="Permalink to this headline">¶</a></h3>
 <p>Add the following to the <strong>root Makefile</strong> and run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">github_docs</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># manual</span>
@@ -292,7 +293,7 @@ github_action_docs:
 <p>After the repository and the <strong>docs</strong> directory have been committed to GitHub go to the repository
 settings and select it as the <strong>Source</strong> for GitHub Pages.</p>
 </div>
-<div class="section" id="github-actions-to-auto-build-github-pages">
+<section id="github-actions-to-auto-build-github-pages">
 <h4>12: github actions to auto build github pages<a class="headerlink" href="#github-actions-to-auto-build-github-pages" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -344,8 +345,8 @@ settings and select it as the <strong>Source</strong> for GitHub Pages.</p>
         <span class="no">git push</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="references">
+</section>
+<section id="references">
 <h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
 <p>This project has been made possible by using/reading:</p>
 <ul class="simple">
@@ -354,10 +355,10 @@ settings and select it as the <strong>Source</strong> for GitHub Pages.</p>
 <li><p><a class="reference external" href="https://github.com/annegentle/create-demo">github.com: annegentle/create-demo</a></p></li>
 </ul>
 <p>Project fork from: <a class="reference external" href="https://github.com/foolish-dev/ply_sphinx_docs_github_pages/">https://github.com/foolish-dev/ply_sphinx_docs_github_pages/</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
           </div>
@@ -398,7 +399,7 @@ settings and select it as the <strong>Source</strong> for GitHub Pages.</p>
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">API Reference</span></p>
+<p><span class="caption-text">API Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="_autosummary/mytoolbox.html">mytoolbox</a></li>
 </ul>
